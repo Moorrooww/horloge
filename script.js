@@ -50,13 +50,27 @@ function changeStyleBasedOnTime() {
     //* Pour faire cela on crée une condition de la variable currentHour (sa valeur est comprise entre 0 et 23)
     //* On ajoute la classe css appropriée en fonction de l'heure avec la code suivant : 
 
+        if (currentHour >= 5 && currentHour <=8) {
+            element.classList.add("aurore");
+        } else if (currentHour >= 8 && currentHour <= 12) {
+            element.classList.add("matin");
+        } else if (currentHour >= 12 && currentHour <= 18) {
+            element.classList.add("apres-midi");
+        } else if (currentHour >= 18 && currentHour <= 22) {
+            element.classList.add("soiree");
+        } else {
+        element.classList.add("nuit");}
+        
+        
+    
 
             //* Aurore : 5h-8h
             //* Matin : 8h-12h
             //* Après-midi : 12h-18h
             //* Soirée : 18h-22h
             //* Nuit : 22h-5h
-
+ //else if (currentHour >= 22 && //currentHour <= 5){
+ //element.classList.add("nuit");}
 
 
 
