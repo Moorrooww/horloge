@@ -5,7 +5,7 @@ function changeStyleBasedOnTime() {
     let currentHour = new Date().getHours();
     console.log(currentHour);
     
-
+    //Pour changer manuellement : currentHour= nb a choisir // currentHour = 10
 
 
 
@@ -59,7 +59,8 @@ function changeStyleBasedOnTime() {
         } else if (currentHour >= 18 && currentHour <= 22) {
             element.classList.add("soiree");
         } else {
-        element.classList.add("nuit");}
+        element.classList.add("nuit");
+    }
         
         
     
